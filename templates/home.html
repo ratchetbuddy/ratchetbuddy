@@ -1,0 +1,16 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RatchetBuddy - Mobile Auto Tech</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="logo">
+    <img src="{{ url_for('static', filename='ratchetbuddy_logo.png') }}" alt="RatchetBuddy Logo" width="200">
+  </div>
+  <h1>Welcome to RatchetBuddy</h1>
+  <p>Your trusted mobile auto repair service.</p>
+  <a href="/quote"><button>Get a Repair Quote</button></a>
+</body>
+</html>

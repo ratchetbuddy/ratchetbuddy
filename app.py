@@ -12,11 +12,15 @@ def quote():
         make = request.form['make']
         year = request.form['year']
         problem = request.form['problem']
+
+        # Quote logic
         base_price = 100
         age_factor = 2025 - int(year)
         quote = base_price + age_factor * 5
+
         return render_template('quote.html', quote=quote)
-    return render_template('quote.html')
+
+    return render_template('index.html')  # This shows the form
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)

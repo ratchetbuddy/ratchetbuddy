@@ -1,27 +1,83 @@
 /* static/style.css */
+
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  background-color: #f8f8f8;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fbf4e7;
   color: #333;
+  text-align: center;
+  padding: 75px 20px;
+  margin: 0;
 }
 
 .logo img {
-  width: 180px;
+  width: 300px;
   margin-bottom: 20px;
 }
 
-button {
-  background-color: #ff6600;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-button:hover {
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.quote-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.quote-button:hover {
   background-color: #e65c00;
+}
+
+.contact-info {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+}
+
+.contact-info a {
+  color: #f26522;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.fa-facebook {
+  color: #1877F2; /* Facebook blue */
+}
+
+.fa-instagram {
+  color: #E1306C; /* Instagram pink */
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
+  color: #d4531b;
+}
+
+.fa-facebook:hover {
+  color: #145dbf;
+}
+
+.fa-instagram:hover {
+  color: #c62a60;
 }

@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head><title>RatchetBuddy - Get a Quote</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>RatchetBuddy - Get a Quote</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Get a Repair Quote</h1>
-  <form action="/quote" method="POST">
-    <label>Make:</label>
-    <input type="text" name="make" required><br>
-    <label>Year:</label>
-    <input type="number" name="year" required><br>
-    <label>Problem:</label>
-    <input type="text" name="problem" required><br>
-    <button type="submit">Get Quote</button>
-  </form>
+  <div class="container">
+    <h1>Get a Repair Quote</h1>
+    <form action="/quote" method="POST">
+      <div>
+        <label for="make">Make:</label>
+        <input type="text" name="make" id="make" required>
+      </div>
+
+      <div>
+        <label for="year">Year:</label>
+        <input type="number" name="year" id="year" required>
+      </div>
+
+      <div>
+        <label for="problem">Problem:</label>
+        <input type="text" name="problem" id="problem" required>
+      </div>
+
+      <button type="submit" class="quote-button">Get Quote</button>
+    </form>
+  </div>
 </body>
 </html>

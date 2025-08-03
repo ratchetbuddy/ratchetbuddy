@@ -1,16 +1,37 @@
 <!-- templates/home.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>RatchetBuddy - Mobile Auto Tech</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="logo">
-    <img src="{{ url_for('static', filename='ratchetbuddy_logo.png') }}" alt="RatchetBuddy Logo" width="200">
+    <img src="{{ url_for('static', filename='ratchetbuddy_logo.png') }}" alt="RatchetBuddy Logo">
   </div>
+
   <h1>Welcome to RatchetBuddy</h1>
-  <p>Your trusted mobile auto repair service.</p>
-  <a href="/quote"><button type="button">Get a Repair Quote</button></a>
+  <p>Your trusted mobile auto repair service in<br>Birmingham, AL <br>and surrounding areas.</p>
+  <div class="contact-info">
+  <p><strong>📞 Call or Text:</strong> <a href="tel:+12055788675">(205) 578-8675</a></p>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/profile.php?id=61576603714115" target="_blank">
+      <i class="fab fa-facebook fa-2x social-icon"></i>
+    </a>
+
+    <a href="https://instagram.com/ratchet_buddy" target="_blank">
+      <i class="fab fa-instagram fa-2x social-icon"></i>
+    </a>
+
+  </div>
+</div>
+  <!-- <a href="/quote" class="quote-button">Get a Repair Quote</a> -->
 </body>
 </html>
+
+
+

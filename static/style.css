@@ -1,1 +1,27 @@
-/* Add your styles here */
+/* static/style.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.logo img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
